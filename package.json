@@ -1,0 +1,53 @@
+{
+  "name": "traycer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "activationEvents": [
+    "onCommand:traycer.createPlan"
+  ],
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "traycer.createPlan",
+        "title": "Create a Plan"
+      }
+    ],
+    "configuration": {
+      "title": "Traycer Configuration",
+      "properties": {
+        "traycer.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "API Key for accessing the Traycer service"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "tsc -p ./",
+    "pretest": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "@vscode/test-electron": "^2.3.2"
+  },
+  "dependencies": {
+    "@google/genai": "^1.22.0",
+    "@google/generative-ai": "^0.24.1",
+    "vscode": "^1.1.37"
+  }
+}
