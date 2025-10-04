@@ -1,6 +1,6 @@
 # Planova VS Code Extension
 
-Traycer is a Visual Studio Code extension that helps you generate detailed project plans for software development tasks using Google Generative AI (Gemini models).
+Planova is a Visual Studio Code extension that helps you generate detailed project plans for software development tasks using Google Generative AI (Gemini models).
 
 ## Features
 - Command: `Create a Plan` (Command Palette: `planova.createPlan`)
